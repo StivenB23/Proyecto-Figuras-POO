@@ -1,30 +1,36 @@
+# 📐 Proyecto Calculadora de Áreas
 
-# Expre CLI
-
-**Expre CLI** es una herramienta de línea de comandos diseñada para agilizar la creación de proyectos Node.js con estructuras básicas. Con este CLI, puedes generar rápidamente una estructura inicial para tus proyectos, ahorrando tiempo y esfuerzo.
-
-## Características
-
-- Crear automáticamente un nuevo proyecto con un archivo inicial.
-- Configuración rápida y sencilla con un solo comando.
-- Fácil de extender para diferentes estructuras de proyectos.
+¡Bienvenido a la **Calculadora de Áreas**! 🧮✨  
+Este proyecto es una aplicación web hecha con **Node.js**, **Express** y **EJS**, que permite al usuario seleccionar una figura geométrica y calcular su área fácilmente.
 
 ---
 
-## Instalación
+## 🎯 Objetivo
 
-Puedes instalar **Expre CLI** globalmente usando npm:
+Permitir al usuario:
+- Seleccionar una figura (🔷 Rectángulo, 🔺 Triángulo, ⚪ Círculo)
+- Ingresar los datos requeridos
+- Calcular su área de forma rápida y visual
 
-```bash
-npm install -g expre-cli
-```
+Ideal para aprender sobre:
+- Enrutamiento con Express 🚏  
+- Vistas dinámicas con EJS 🖼  
+- Organización con controladores y servicios 🧠  
 
-## Crear Aplicación
+---
 
-Para crear una nueva aplicación, usa el siguiente comando:
+## 🚀 Tecnologías usadas
 
-```bash
-expre new <nombreProyecto>
-```
+- Node.js 🌐
+- Express 🚂
+- EJS 🧩
+- HTML + CSS 🎨
 
-Esto generará una estructura básica para tu proyecto en el directorio actual.
+---
+
+## 📦 Instalación
+
+1. Clona el repositorio:
+   ```bash
+      https://github.com/StivenB23/Proyecto-Figuras-POO
+      ```
