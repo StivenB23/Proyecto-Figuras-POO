@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcular Area</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="form-container">
+        <h2>Calcula el Área</h2>
+        <form action="/calcular" method="POST">
+          <select name="figura" id="figura" onchange="mostrarInputs()">
+            <option value="">Selecciona figura</option>
+            <option value="rectangulo">Rectángulo</option>
+            <option value="triangulo">Triángulo</option>
+            <option value="circulo">Círculo</option>
+          </select>
+
+          <div id="inputs"></div>
+
+          <button type="submit">Calcular Área</button>
+        </form>
+
+        <% if (typeof resultado !== 'undefined') { %>
+        <div class="result">Área: <%= resultado %></div>
+        <% } %>
+      </div>
+
+      <script>
+        function mostrarInputs() {
+          const figura = document.getElementById("figura").value;
+          const contenedor = document.getElementById("inputs");
+          contenedor.innerHTML = "";
+
+          if (figura === "rectangulo") {
+            contenedor.innerHTML = `
+                  <input type="number" name="base" placeholder="Base" required />
+                  <input type="number" name="altura" placeholder="Altura" required />
+                `;
+          } else if (figura === "triangulo") {
+            contenedor.innerHTML = `
+                  <input type="number" name="base" placeholder="Base" required />
+                  <input type="number" name="altura" placeholder="Altura" required />
+                `;
+          } else if (figura === "circulo") {
+            contenedor.innerHTML = `
+                  <input type="number" name="radio" placeholder="Radio" required />
+                `;
+          }
+        }
+      </script>
+    </main>
+  </body>
+</html>
